@@ -9,6 +9,7 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+
 def test_different_passwords_generations():
     """Тест, что два сгенерированных подряд пароля различаются"""
     pw0 = generate_password(12)
@@ -19,3 +20,15 @@ def test_password_lenght_is_correct():
     """Тест, что длина пароля соответствует заданной"""
     pw = generate_password(21)
     assert any(char.isupper() for char in pw)
+
+def test_different_generated_passwords():
+    """Тест, что два сгенерированных подряд пароля различаются"""
+    password1 = generate_password(12)
+    password2 = generate_password(12)
+    assert password1 != password2
+
+"""# Тест, что пароль содержит хотя бы одну букву в верхнем регистре
+def test_contains_uppercase_letter():
+    Тест, что пароль содержит хотя бы одну букву в верхнем регистре
+    password = generate_password(20)
+    assert any(char.isupper() for char in password)"""
