@@ -27,10 +27,11 @@ pytest
 ## Автор
 
 Kodland
-=======
-Maxim
-=======
-Andrey
-=======
-Juli
 
+Алихан
+
+Maxim
+
+Andrey
+
+Juli
