@@ -8,6 +8,11 @@ def test_password_characters():
     password = generate_password(100)  # Генерируем длинный пароль для более надежной проверки
     for char in password:
         assert char in valid_characters
+        
+def test_password_length():
+    password_length = 12
+    password = generate_password(password_length)
+    assert len(password) == password_length
 
 
 def test_different_passwords_generations():

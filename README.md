@@ -28,6 +28,8 @@ pytest
 
 Kodland
 
+Рандом чел
+
 Алихан
 
 Maxim
@@ -35,3 +37,4 @@ Maxim
 Andrey
 
 Juli
+
